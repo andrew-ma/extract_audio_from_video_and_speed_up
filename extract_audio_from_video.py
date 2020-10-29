@@ -73,6 +73,8 @@ if __name__ == "__main__":
 
     input_folder = os.path.join(args.source_folder)
     output_folder = os.path.join(args.output_folder)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
 
     output_audio_format = args.output_audio_format
     ########################################################
